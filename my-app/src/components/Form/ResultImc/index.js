@@ -1,9 +1,11 @@
 import React from "react";
-import { View } from "react-native";
+import { View, Text } from "react-native";
 
-export function ResultImc({}){
+export function ResultImc({messageResult, resultImc}){
     return (
         <View>
+                        <Text>{messageResult}</Text>
+            <Text>{resultImc}</Text>
 
         </View>
     )
