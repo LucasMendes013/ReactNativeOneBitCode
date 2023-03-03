@@ -1,6 +1,7 @@
 import React from "react";
 import { styles } from "./styles";
-import { View, Text, TextInput } from "react-native";
+import { View, Text, TextInput, Button } from "react-native";
+import { ResultImc } from "./ResultImc";
 
 export function Form() {
     return (
@@ -13,7 +14,9 @@ export function Form() {
             <Text style={styles.textData}>Peso</Text>
             <TextInput 
                 placeholder="digite seu peso" 
-                keyboardType="numeric"></TextInput>
+                keyboardType="numeric" />
+            <Button title="calcular IMC"/>
+            <ResultImc messageResult={messageImc} resultImc={imc}/>
             </View>
         </View>
     )
